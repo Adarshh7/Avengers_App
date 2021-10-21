@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tony Stark"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imgTonyStark" />
+
+
+            <TextView
+                android:id="@+id/txtView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ironman"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgTonyStark"
+                android:layout_below="@id/txtView1"/>
+
+            <TextView
+                android:id="@+id/txtView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="And, I am Ironman"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgTonyStark"
+                android:layout_below="@id/txtView2"/>
+
+            <ImageView
+                android:id="@+id/imgTonyStark"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/tony_stark"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steve Rogers"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imgViewcap" />
+
+
+            <TextView
+                android:id="@+id/txtView2cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Captain America"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgViewcap"
+                android:layout_below="@id/txtView1cp"/>
+
+            <TextView
+                android:id="@+id/txtView3cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I can do this all day"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgViewcap"
+                android:layout_below="@id/txtView2cp"/>
+
+            <ImageView
+                android:id="@+id/imgViewcap"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/captain_america"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thor Odinson"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imgviewThor" />
+
+
+            <TextView
+                android:id="@+id/txtView2th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Mighty Thor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgviewThor"
+                android:layout_below="@id/txtView1th"/>
+
+            <TextView
+                android:id="@+id/txtView3th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bring me Thanos"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgviewThor"
+                android:layout_below="@id/txtView2th"/>
+
+            <ImageView
+                android:id="@+id/imgviewThor"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/thor"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1hl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bruce Banner"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imgViewhl" />
+
+
+            <TextView
+                android:id="@+id/txtView2hl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hulk"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgViewhl"
+                android:layout_below="@id/txtView1hl"/>
+
+            <TextView
+                android:id="@+id/txtView3hl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm always angry"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgViewhl"
+                android:layout_below="@id/txtView2hl"/>
+
+            <ImageView
+                android:id="@+id/imgViewhl"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/hulk"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1bw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Natasha Romanoff"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imgViewbw" />
+
+
+            <TextView
+                android:id="@+id/txtView2bw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black Widow"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgViewbw"
+                android:layout_below="@id/txtView1bw"/>
+
+            <TextView
+                android:id="@+id/txtView3bw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="She’s Not Alone"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgViewbw"
+                android:layout_below="@id/txtView2bw"/>
+
+            <ImageView
+                android:id="@+id/imgViewbw"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/widow"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1he"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clint Barton"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imgViewhe" />
+
+
+            <TextView
+                android:id="@+id/txtView2he"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hawkeye/Ronin"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgViewhe"
+                android:layout_below="@id/txtView1he"/>
+
+            <TextView
+                android:id="@+id/txtView3he"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't give me hope"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgViewhe"
+                android:layout_below="@id/txtView2he"/>
+
+            <ImageView
+                android:id="@+id/imgViewhe"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/hawk_eye"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T’Challa"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imgViewbp" />
+
+
+            <TextView
+                android:id="@+id/txtView2bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black Panther"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgViewbp"
+                android:layout_below="@id/txtView1bp"/>
+
+            <TextView
+                android:id="@+id/txtView3bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wakanda Forever"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgViewbp"
+                android:layout_below="@id/txtView2bp"/>
+
+            <ImageView
+                android:id="@+id/imgViewbp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/blackpanther"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
