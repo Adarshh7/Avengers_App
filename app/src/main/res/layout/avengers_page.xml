@@ -396,5 +396,62 @@
                 android:src="@drawable/blackpanther"/>
 
         </RelativeLayout>
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView1sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wanda Maximoff"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imgViewsw" />
+
+
+            <TextView
+                android:id="@+id/txtView2sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scarlet Witch"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#616161"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgViewsw"
+                android:layout_below="@id/txtView1sw"/>
+
+            <TextView
+                android:id="@+id/txtView3sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Everybody's Afraid Of Something"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#b71c1c"
+                android:layout_toRightOf="@id/imgViewsw"
+                android:layout_below="@id/txtView2sw"/>
+
+            <ImageView
+                android:id="@+id/imgViewsw"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/scarlet"/>
+
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

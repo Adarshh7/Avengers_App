@@ -60,33 +60,27 @@ class LoginActivity : AppCompatActivity() {
 
             if(mobileNumber==validMobileNum) {
                 if (password == validPassword[0]) {
-                    savePreferences()
                     nameOfAvenger = "Spruha"
-                    intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
 
                 }
                 else if (password == validPassword[1]) {
-                    savePreferences()
                     nameOfAvenger = "Annie"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
                     startActivity(intent)
                 }
                 else if (password == validPassword[2]) {
-                    savePreferences()
                     nameOfAvenger = "Somo"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
                     startActivity(intent)
                 }
                 else if (password == validPassword[3]) {
-                    savePreferences()
                     nameOfAvenger = "God"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
                     startActivity(intent)
                 }
                 else if (password == validPassword[4]) {
-                    savePreferences()
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
                     startActivity(intent)
                 }
 
@@ -108,9 +102,10 @@ class LoginActivity : AppCompatActivity() {
         finish()
     }
 
-    fun savePreferences()
+    fun savePreferences(title:String)
     {
         sharedPreferences.edit().putBoolean("isLoggedin",true).apply()
+        sharedPreferences.edit().putString("Title",title).apply()
     }
 
 
