@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var txtForgotPass : TextView
     lateinit var txtRegister : TextView
     val validMobileNum="8480278539"
-    val validPassword= arrayOf("baby","meow","kant","dev","other")
+    val validPassword= arrayOf("baby","meow","kant","dev","other","dev4429")
     var nameOfAvenger="Avenger"
     lateinit var sharedPreferences: SharedPreferences
 
@@ -32,17 +32,17 @@ class LoginActivity : AppCompatActivity() {
         sharedPreferences=getSharedPreferences(getString(R.string.preferences_file_name), Context.MODE_PRIVATE)
 
         val isLoggedin=sharedPreferences.getBoolean("isLoggedin",false)
+        setContentView(R.layout.login_avengers)
 
         if(isLoggedin)
         {
             val intent = Intent(this@LoginActivity, MainActivity::class.java)
             startActivity(intent)
 
+            finish()
+
         }
-        else
-        {
-            setContentView(R.layout.login_avengers)
-        }
+
 
         etMobileNum=findViewById(R.id.editText1)
         etMobilePass=findViewById(R.id.editText2)
