@@ -1,6 +1,8 @@
 package com.adarshh.activitylifecycle
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -16,7 +18,10 @@ class LoginActivity : AppCompatActivity() {
     lateinit var txtForgotPass : TextView
     lateinit var txtRegister : TextView
     val validMobileNum="8480278539"
-    val validPassword="dev4429"
+    val validPassword= arrayOf("baby","meow","kant","dev","other")
+    var nameOfAvenger="Avenger"
+    lateinit var sharedPreferences: SharedPreferences
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,13 +29,28 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.login_avengers)
         title="Log in"
 
+        sharedPreferences=getSharedPreferences(getString(R.string.preferences_file_name), Context.MODE_PRIVATE)
+
+        val isLoggedin=sharedPreferences.getBoolean("isLoggedin",false)
+
+        if(isLoggedin)
+        {
+            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+            startActivity(intent)
+
+        }
+        else
+        {
+            setContentView(R.layout.login_avengers)
+        }
+
         etMobileNum=findViewById(R.id.editText1)
         etMobilePass=findViewById(R.id.editText2)
         btnLogin=findViewById(R.id.btnlogin)
         txtForgotPass=findViewById(R.id.forgotPass)
         txtRegister=findViewById(R.id.registerYou)
 
-
+        val intent = Intent(this@LoginActivity, MainActivity::class.java)
 
 
         btnLogin.setOnClickListener {
@@ -38,14 +58,44 @@ class LoginActivity : AppCompatActivity() {
             val mobileNumber=etMobileNum.text.toString()
             val password=etMobilePass.text.toString()
 
-            if((mobileNumber==validMobileNum)&&(password==validPassword))
-           {
-               val intent= Intent(this@LoginActivity,MainActivity::class.java)
-               startActivity(intent)
-           }
+            if(mobileNumber==validMobileNum) {
+                if (password == validPassword[0]) {
+                    savePreferences()
+                    nameOfAvenger = "Spruha"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+
+                }
+                else if (password == validPassword[1]) {
+                    savePreferences()
+                    nameOfAvenger = "Annie"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+                else if (password == validPassword[2]) {
+                    savePreferences()
+                    nameOfAvenger = "Somo"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+                else if (password == validPassword[3]) {
+                    savePreferences()
+                    nameOfAvenger = "God"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+                else if (password == validPassword[4]) {
+                    savePreferences()
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+
+
+            }
            else {
                Toast.makeText(this@LoginActivity, "Incorrect Credentials", Toast.LENGTH_LONG).show()
-           }
+                }
+
 
 
 
@@ -56,6 +106,11 @@ class LoginActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         finish()
+    }
+
+    fun savePreferences()
+    {
+        sharedPreferences.edit().putBoolean("isLoggedin",true).apply()
     }
 
 
